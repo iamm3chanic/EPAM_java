@@ -1,3 +1,5 @@
+package logic;
+import domain.Database;
 public class Sorting {
 
     public static void sort() {

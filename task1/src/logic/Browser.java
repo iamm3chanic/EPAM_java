@@ -1,9 +1,10 @@
-import java.util.List;
+package logic;
+
+import domain.*;
 import java.util.Scanner;
 public class Browser {
-   // @Override
     public void browse() {
-        int num,low,high,flag=0;
+        int num,flag=0;
         int volumeAll = Summator.getV();
         int weightliftAll = Summator.getW();
         Scanner scanner = new Scanner(System.in);
@@ -27,7 +28,7 @@ public class Browser {
                     break;
                 case 2:
                     for(int i=0;i<19;i++) {
-                        System.out.println(Database.commonArray[i].getType()); 
+                        System.out.println(Database.commonArray[i].getType());
                         System.out.println(" пролетает " + Database.commonArray[i].getDistance() + " миль");
                     }
                     break;
@@ -36,11 +37,7 @@ public class Browser {
                     System.out.println(volumeAll + " тонн " + weightliftAll + " кубических метров");
                     break;
                 case 4:
-                    System.out.println("Введите нижнюю границу потребления топлива на милю:\n");
-                    low = scanner.nextInt();
-                    System.out.println("Введите верхнюю границу потребления топлива на милю:\n");
-                    high = scanner.nextInt();
-                    //TODO find plane
+                    FinderByFuel.find();
                     break;
                 case 5:
                     System.out.println("До свидания!");

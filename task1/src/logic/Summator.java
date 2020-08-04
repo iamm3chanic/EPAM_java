@@ -1,3 +1,5 @@
+package logic;
+import domain.Database;
 public class Summator {
     static int volumeAll = 0;
     static int weightliftAll = 0;
