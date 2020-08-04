@@ -1,3 +1,5 @@
+package domain;
+
 public enum PlaneType {
     PASSENGER (1, "Пассажирский"),
     FIGHTER   (2, "Истребитель"),

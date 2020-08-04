@@ -1,9 +1,11 @@
+package domain;
+
 public class Database {
     public static Plane[] fighterArray = new Plane[10];
-    static Plane[] cargoArray = new Plane[10];
-    static Plane[] passengerArray = new Plane[10];
-    static Plane[] bomberArray = new Plane[10];
-    static Plane[] commonArray = new Plane[40];
+    public static Plane[] cargoArray = new Plane[10];
+    public static Plane[] passengerArray = new Plane[10];
+    public static Plane[] bomberArray = new Plane[10];
+    public static Plane[] commonArray = new Plane[40];
     public static void setCommonArray(Plane[] commonArray) {
         Database.commonArray = commonArray;
         Database.commonArray[0] = Database.passengerArray[0];

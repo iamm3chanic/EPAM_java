@@ -1,3 +1,5 @@
+package domain;
+
 public abstract class Plane {
     private PlaneType type;
     private String fuelType;
