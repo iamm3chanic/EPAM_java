@@ -16,21 +16,19 @@ public class FinderByFuel {
         System.out.println("Введите верхнюю границу потребления топлива на милю:\n");
         high = scanner.nextInt();
         for(i=0;i<4;i++) {
-            for (t = low; t < high; t++) {
-                if (Database.bomberArray[i].getFuelCount()==t) {
-                    System.out.println("Найден самолет типа " + PlaneType.BOMBER + "потребляющий" + Database.bomberArray[i].getFuelCount() + "топлива на милю");
+                if ((Database.bomberArray[i].getFuelCount() >= low)&&(Database.bomberArray[i].getFuelCount() <= high)) {
+                    System.out.println("Найден самолет типа " + PlaneType.BOMBER + " потребляющий " + Database.bomberArray[i].getFuelCount() + " л топлива на милю");
                 }
-                else if (Database.fighterArray[i].getFuelCount()==t) {
-                    System.out.println("Найден самолет типа " + PlaneType.FIGHTER + "потребляющий" + Database.fighterArray[i].getFuelCount() + "топлива на милю");
+                else if ((Database.fighterArray[i].getFuelCount() >= low)&&(Database.fighterArray[i].getFuelCount() <= high)) {
+                    System.out.println("Найден самолет типа " + PlaneType.FIGHTER + " потребляющий " + Database.fighterArray[i].getFuelCount() + " л топлива на милю");
                 }
-                else if (Database.passengerArray[i].getFuelCount()==t) {
-                    System.out.println("Найден самолет типа " + PlaneType.PASSENGER + "потребляющий" + Database.passengerArray[i].getFuelCount() + "топлива на милю");
+                else if ((Database.passengerArray[i].getFuelCount() >= low)&&(Database.passengerArray[i].getFuelCount() <= high)) {
+                    System.out.println("Найден самолет типа " + PlaneType.PASSENGER + " потребляющий " + Database.passengerArray[i].getFuelCount() + " л топлива на милю");
                 }
-                else if (Database.cargoArray[i].getFuelCount()==t) {
-                    System.out.println("Найден самолет типа " + PlaneType.CARGO + "потребляющий" + Database.cargoArray[i].getFuelCount() + "топлива на милю");
+                else if ((Database.cargoArray[i].getFuelCount() >= low)&&(Database.cargoArray[i].getFuelCount() <= high)) {
+                    System.out.println("Найден самолет типа " + PlaneType.CARGO + " потребляющий " + Database.cargoArray[i].getFuelCount() + " л топлива на милю");
                 }
             }
-        }
         scanner.close();
     }
 }
