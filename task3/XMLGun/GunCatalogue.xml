@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Input XML-document. This XML is valid for the GunCatalogue.xsd XML-schema
+-->
+<guns xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns="http://www.example.org/guns"
+      xsi:schemaLocation="http://www.example.org/planes GunCatalogue.xsd">
+<gun id="gun1">
+<model>AR-15</model>
+<handy>true</handy>
+<origin>USA</origin>
+<chars>
+<distance>middle</distance>
+<ontarget>500</ontarget>
+<magazine>true</magazine>
+<optics>false</optics>
+<material>steelplastic</material>
+</chars>
+</gun>
+<gun id="gun2">
+<model>SVD</model>
+<handy>false</handy>
+<origin>Russia</origin>
+<chars>
+<distance>far</distance>
+<ontarget>1200</ontarget>
+<magazine>true</magazine>
+<optics>true</optics>
+<material>steelwood</material>
+</chars>
+</gun>
+<gun id="gun3">
+<model>HK-G36C</model>
+<handy>true</handy>
+<origin>Germany</origin>
+<chars>
+<distance>close</distance>
+<ontarget>300</ontarget>
+<magazine>true</magazine>
+<optics>true</optics>
+<material>steel</material>
+</chars>
+</gun>
+</guns>

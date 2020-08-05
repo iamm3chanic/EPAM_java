@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.example.org/guns"
+        xmlns:tns="http://www.example.org/guns" elementFormDefault="qualified">
+<element name="guns">
+<complexType>
+<sequence>
+<element name="gun" type="tns:gun" maxOccurs="unbounded"/>
+</sequence>
+</complexType>
+</element>
+<complexType name="gun">
+<sequence>
+<element name="model" type="string"/>
+<element name="handy" type="tns:boolean"/>
+<element name="origin" type="string"/>
+<element name="chars" type="tns:chars"/>
+</sequence>
+<attribute name="id" use="required">
+<simpleType>
+<restriction base="ID">
+<pattern value="[a-zA-z0-9_]+"/>
+</restriction>
+</simpleType>
+</attribute>
+</complexType>
+
+<complexType name="chars">
+<sequence>
+<element name="distance" type="tns:distance" minOccurs="0"/>
+<element name="ontarget" type="tns:ontarget" minOccurs="0"/>
+<element name="magazine" type="boolean" minOccurs="0"/>
+<element name="optics" type="boolean" minOccurs="0"/>
+<element name="material" type="tns:material" minOccurs="0"/>
+</sequence>
+</complexType>
+<simpleType name="distance">
+<restriction base="string">
+<enumeration value="close"/>
+<enumeration value="middle"/>
+<enumeration value="far"/>
+</restriction>
+</simpleType>
+<complexType name="ontarget">
+<simpleContent>
+<extension base="positiveInteger">
+</extension>
+</simpleContent>
+</complexType>
+<simpleType name="material">
+<restriction base="string">
+<enumeration value="steel"/>
+<enumeration value="steelplastic"/>
+<enumeration value="steelwood"/>
+</restriction>
+</simpleType>
+
+    <simpleType name="boolean">
+        <restriction base="boolean">
+            <enumeration value="true"/>
+            <enumeration value="false"/>
+        </restriction>
+    </simpleType>
+</schema>
