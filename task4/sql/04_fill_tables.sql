@@ -21,6 +21,13 @@ VALUES
 (2),
 (3);
 
+INSERT INTO `bookmaker`
+(`bookmaker_id`)
+VALUES
+(1),
+(2),
+(3);
+
 INSERT INTO `bet` 
 (`bet_id`, `client_id`,`race_id`, `bet_type`, `horse`, `coeff`,
 `description`,  `status` )
