@@ -8,30 +8,22 @@ import javax.servlet.http.HttpServletResponse;
 
 import controller.Action;
 import controller.Forward;
-import domain.Role;
-import domain.User;
 import service.ServiceException;
 import service.UserService;
 import util.FactoryException;
 
-public class UserSaveAction extends Action {
+public class UserDeleteAction extends Action {
     @Override
     public Forward execute(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
-        User user = new User();
+        Long id = null;
         try {
-            user.setId(Long.parseLong(req.getParameter("id")));
+            id = Long.parseLong(req.getParameter("id"));
         } catch(NumberFormatException e) {}
-        user.setLogin(req.getParameter("login"));
-        user.setLastName(req.getParameter("last_name"));
-        user.setFirstName(req.getParameter("first_name"));
-        try {
-            user.setRole(Role.values()[Integer.parseInt(req.getParameter("role"))]);
-        } catch(NumberFormatException | ArrayIndexOutOfBoundsException e) {}
-        if(user.getLogin() != null && user.getRole() != null) {
+        if(id != null) {
             try {
                 UserService service = getServiceFactory().getUserService();
-                service.save(user);
+                service.delete(id);
             } catch(FactoryException | ServiceException e) {
                 throw new ServletException(e);
             }
