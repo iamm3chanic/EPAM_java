@@ -1,1 +1,90 @@
+application.title=System “Races”
+application.welcome=Current user is
+application.button.logout=Log out
+application.button.password.change=Change password
 
+
+role.admin=Administrator
+role.bookmaker=Bookmaker
+role.client=Client
+
+status.success=Success
+status.loss=Loss
+
+login.title=Login page
+login.message.incorrect.password=User name or password is incorrect. Registration required
+login.message.access.denied=Access is denied
+login.form.login=User name
+login.form.password=Password
+login.button.login=Log in
+
+password.change.title=Changing password
+password.change.form.old.password=Old password
+password.change.form.new.password=New password
+password.change.form.new.password.repeat=Repeat new password
+password.change.button.save=Save
+password.change.button.cancel=Cancel
+
+user.list.title=List of users
+user.list.table.login=User login
+user.list.table.lastName=User last name
+user.list.table.firstName=User first name
+user.list.table.role=User role
+user.list.button.add=Add
+
+user.edit.title.edit=Edit user information
+user.edit.title.add=Add new user
+user.edit.form.login=User login
+user.edit.form.lastName=User last name
+user.edit.form.firstName=User first name
+user.edit.form.role=User role
+user.edit.button.save=Save
+user.edit.button.delete=Delete
+user.edit.button.reset=Reset
+user.edit.button.cancel=Cancel
+
+request.list.title=List of requests
+request.list.table.id=Request number
+request.list.table.bet=Bet
+request.list.table.description=Description
+request.list.table.client=Client
+request.list.table.status=Status
+request.list.button.add=Add
+
+request.view.title=Request information
+request.view.table.id=Request number
+request.view.table.description=Description
+request.view.table.client=Client
+request.view.table.bet=Bet
+request.view.table.race=Race
+request.view.table.status=Status
+request.view.button.edit=Edit
+
+request.edit.title.edit=Edit request information
+request.edit.title.add=Add new request
+request.edit.form.id=Request number
+request.edit.form.description=Description
+request.edit.form.client=Client
+request.edit.form.status=Status
+request.edit.button.save=Save
+request.edit.button.delete=Delete
+request.edit.button.reset=Reset
+request.edit.button.cancel=Cancel
+
+race.list.title=List of races
+race.list.table.id=Race number
+race.list.table.horses=Number of horses
+race.list.table.place=Place
+race.list.table.date=Date
+race.list.button.add=Add
+
+race.edit.title.edit=Edit race information
+race.edit.title.add=Add new race
+race.edit.form.id=Race number
+race.edit.form.horses=Number of horses
+race.edit.form.place=Place
+race.edit.form.date=Date
+race.edit.button.save=Save
+race.edit.button.delete=Delete
+race.edit.button.reset=Reset
+race.edit.button.cancel=Cancel

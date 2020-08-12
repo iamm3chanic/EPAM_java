@@ -1,0 +1,88 @@
+application.title=Система «Скачки»
+application.welcome=Текущий пользователь
+application.button.logout=Выйти
+application.button.password.change=Сменить пароль
+
+role.admin=Администратор
+role.bookmaker=Букмекер
+role.client=Клиент
+
+status.success=Выигрыш
+status.loss=Проигрыш
+
+login.title=Вход в систему
+login.message.incorrect.password=Такого пользователя нет. Зарегистрируйтесь, чтобы войти
+login.message.access.denied=Доступ запрещён
+login.form.login=Имя пользователя
+login.form.password=Пароль
+login.button.login=Войти
+
+password.change.title=Смена пароля
+password.change.form.old.password=Старый пароль
+password.change.form.new.password=Новый пароль
+password.change.form.new.password.repeat=Повтор нового пароля
+password.change.button.save=Сохранить
+password.change.button.cancel=Отмена
+
+user.list.title=Список пользователей
+user.list.table.login=Логин
+user.list.table.lastName=Фамилия
+user.list.table.firstName=Имя
+user.list.table.role=Роль
+user.list.button.add=Добавить
+
+user.edit.title.edit=Редактирование данных пользователя
+user.edit.title.add=Добавление нового пользователя
+user.edit.form.login=Логин
+user.edit.form.lastName=Фамилия
+user.edit.form.firstName=Имя
+user.edit.form.role=Роль
+user.edit.button.save=Сохранить
+user.edit.button.delete=Удалить
+user.edit.button.reset=Сброс
+user.edit.button.cancel=Отмена
+
+request.list.title=Список заявок
+request.list.table.id=Номер заявки
+request.list.table.description=Описание
+request.list.table.client=Клиент
+request.list.table.status=Статус
+request.list.button.add=Добавить
+
+request.view.title=Информация по заявке
+request.view.table.id=Номер заявки
+request.view.table.description=Описание
+request.view.table.client=Клиент
+request.view.table.bet=Ставка
+request.view.table.race=Забег
+request.view.table.status=Статус
+request.view.button.edit=Редактировать
+
+request.edit.title.edit=Редактирование заявки
+request.edit.title.add=Добавление новой заявки
+request.edit.form.id=Номер заявки
+request.edit.form.description=Описание
+request.edit.form.client=Клиент
+request.edit.form.status=Статус
+request.edit.button.save=Сохранить
+request.edit.button.delete=Удалить
+request.edit.button.reset=Сброс
+request.edit.button.cancel=Отмена
+
+race.list.title=Список забегов
+race.list.table.id=Номер забега
+race.list.table.horses=Количество лошадей
+race.list.table.place=Место проведения
+race.list.table.date=Дата
+race.list.button.add=Добавить
+
+race.edit.title.edit=Редактировать информацию о забеге
+race.edit.title.add=Добавить новый забег
+race.edit.form.id=Номер забега
+race.edit.form.horses=Количество лошадей
+race.edit.form.place=Место проведения
+race.edit.form.date=Дата
+race.edit.button.save=Сохранить
+race.edit.button.delete=Удалить
+race.edit.button.reset=Сброс
+race.edit.button.cancel=Отмена
