@@ -1,7 +1,7 @@
 package domain;
 
 import java.util.Date;
-
+import java.text.*;
 public class Race extends TableUnit {
     private byte horses;
     private Date date;
