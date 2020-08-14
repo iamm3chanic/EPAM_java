@@ -38,6 +38,14 @@ public class User extends TableUnit {
     public void setRole(Role role) {
         this.role = role;
     }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
 }
 /*`user_id`     INT NOT NULL AUTO_INCREMENT,
     `login`       VARCHAR(255) NOT NULL,
