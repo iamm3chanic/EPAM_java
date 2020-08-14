@@ -23,11 +23,11 @@ public class Summator {
         }
     }
 
-    public static int getV() {
+    public static int getVolumeAll() {
         return volumeAll;
     }
 
-    public static int getW() {
+    public static int getWeightliftAll() {
         return weightliftAll;
     }
 //суммируем весь волюм и вейтлифт по всем самолетам что есть в компании
