@@ -42,7 +42,7 @@ public class XmlReader {
                             chars.setDistance(reader.getElementText());
                             gun.setChars(chars);
                         } else if ("ontarget".equals(tagName)) {
-                            chars.setOntarget(Integer.parseInt(reader.getElementText()));
+                            chars.setOnTarget(Integer.parseInt(reader.getElementText()));
                             gun.setChars(chars);
                         } else if ("magazine".equals(tagName)) {
                             chars.setMagazine(Boolean.parseBoolean(reader.getElementText()));

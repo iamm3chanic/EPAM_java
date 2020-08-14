@@ -4,7 +4,7 @@
 -->
 <guns xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xmlns="http://www.example.org/guns"
-      xsi:schemaLocation="http://www.example.org/planes GunCatalogue.xsd">
+      xsi:schemaLocation="http://www.example.org/guns GunCatalogue.xsd">
 <gun id="gun1">
 <model>AR-15</model>
 <handy>true</handy>

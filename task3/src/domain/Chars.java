@@ -2,7 +2,7 @@ package domain;
 
 public class Chars {
     private String distance;
-    private int ontarget;
+    private int onTarget;
     private boolean magazine;
     private boolean optics;
     private String material;
@@ -12,7 +12,7 @@ public class Chars {
     public Chars(String distance, int ontarget, boolean magazine,
                  boolean optics, String material) {
         this.distance = distance;
-        this.ontarget = ontarget;
+        this.onTarget = ontarget;
         this.magazine = magazine;
         this.optics = optics;
         this.material = material;
@@ -26,12 +26,12 @@ public class Chars {
         this.distance = distance;
     }
 
-    public int getOntarget() {
-        return ontarget;
+    public int getOnTarget() {
+        return onTarget;
     }
 
-    public void setOntarget(int ontarget) {
-        this.ontarget = ontarget;
+    public void setOnTarget(int onTarget) {
+        this.onTarget = onTarget;
     }
 
     public boolean isMagazine() {
@@ -59,7 +59,7 @@ public class Chars {
 
     @Override
     public String toString() {
-        return "CHARS:" + "\n\tdistance = " + distance + "\n\tdistance on target = " + ontarget
+        return "CHARS:" + "\n\tdistance = " + distance + "\n\tdistance on target = " + onTarget
                 + "\n\tmagazine = " + magazine + "\n\toptics = " + optics;
     }
 }
