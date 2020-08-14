@@ -20,7 +20,6 @@ public class Browser {
                 System.out.println("3.Общая вместимость и грузоподъемность");
                 System.out.println("4.Найти самолет по параметрам");
                 System.out.println("5.Выход\n");
-//                num = scanner.nextInt();
                 try {
                     num = scanner.nextInt();
                 } catch (InputMismatchException e) {
