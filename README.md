@@ -1,5 +1,6 @@
 # EPAM_java
 Took tasks from EPAM center's free source and solved some of them.
+### This Repository contains 4 independent projects.
 1. OOP
 2. Strings
 3. XML
