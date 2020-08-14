@@ -9,6 +9,12 @@ public abstract class Plane {
     private Integer distance;
 
     public Plane(PlaneType planeType, String fuelType, int fuelCount, int volume, int weightlift, int distance) {
+        this.type = planeType;
+        this.fuelType = fuelType;
+        this.fuelCount = fuelCount;
+        this.volume = volume;
+        this.weightlift = weightlift;
+        this.distance = distance;
     }
 
     public PlaneType getType() {

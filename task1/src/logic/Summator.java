@@ -1,16 +1,17 @@
 package logic;
+
 import domain.Database;
+
 public class Summator {
     static int volumeAll = 0;
     static int weightliftAll = 0;
-    public static void count() {
 
-        int i;
-        Database.setFighterArray(Database.fighterArray);
-        Database.setBomberArray(Database.bomberArray);
-        Database.setCargoArray(Database.cargoArray);
-        Database.setPassengerArray(Database.passengerArray);
-        for (i=0;i<4;i++) {
+    public static void count() {
+        Database.setFighterArray();
+        Database.setBomberArray();
+        Database.setCargoArray();
+        Database.setPassengerArray();
+        for (int i = 0; i < 4; i++) {
             volumeAll += Database.bomberArray[i].getVolume();
             volumeAll += Database.fighterArray[i].getVolume();
             volumeAll += Database.cargoArray[i].getVolume();
@@ -21,6 +22,7 @@ public class Summator {
             weightliftAll += Database.passengerArray[i].getWeightlift();
         }
     }
+
     public static int getV() {
         return volumeAll;
     }
